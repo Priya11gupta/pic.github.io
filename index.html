@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+</head>
+<style type="text/css">
+    *
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+    .main_header
+    {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+   
+    }
+    .design
+    {
+        position: relative;
+        width: 400px;
+        height: 400px;
+    }
+    .design > *,.blend > *{
+        position:absolute ;
+        width: 400px;
+        height: 400px;
+    }
+    #rotateBorder
+    {
+        border: 15px #2d145c solid;
+        transform: rotate(45deg);
+        box-shadow: 0 0 10px #2d145c,inset 0 0 20px #2d145c;
+    }
+    .grid
+    {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    .data_white
+    {
+        background: #fff;
+    }
+    .blend{
+        mix-blend-mode: multiply;
+    }
+</style>
+<body>
+    <div class="main_header">
+        
+        <div class="design">
+            <img src="dog.jpg">
+            <div id="rotateBorder" ></div>
+             <div class="grid">
+              <div class="data_white" ></div>
+               <div></div>
+               <div></div>
+               <div class="data_white"></div>
+            </div>
+            <div class="blend">
+            <img src="dog.jpg">
+            
+             <div class="grid">
+               <div></div>
+               <div class="data_white" ></div>
+               <div class="data_white"></div>
+               <div></div>
+
+    </div>
+    </div>
+    </div>
+</div>
+</body>
+</html>
